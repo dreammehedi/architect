@@ -1,0 +1,54 @@
+/* mobile & small devices responsive */
+@media screen and (max-width: 576px) {
+    .container{
+        width: 98%;
+    }
+    section{
+        margin: 2rem 0;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    /* navigation */
+    nav{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 1rem 0;
+    }
+    a.logo-title {
+        font-size: 2rem;
+    }
+
+    /* header content */
+    .header-content{
+        margin: 3.75rem 0;
+    }
+    h1.header-content-title{
+        font-size: 2rem;
+    }
+    /* banner */
+    .banner img{
+        height: auto;
+    }
+}
+
+/* tablet and laptop device responsive */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .container{
+        width: 100%;
+    }
+    /* navigation */
+    nav{
+        flex-direction: column;
+        gap: 1.5rem 0;
+    }
+    /* header content */
+    .header-content{
+        margin: 4rem 0;
+        max-width: 100%;
+    }
+    h1.header-content-title{
+        font-size: 3rem;
+    }
+}
