@@ -35,8 +35,13 @@ a{
     font-weight: 600;
     border-radius: 8px;
     padding: 1.25rem 1.5rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     cursor: pointer;
+    transition: all .5s ease;
+}
+.btn:hover{
+    background-color: #131313;
+    border-color: #FF900E;
 }
 .main-heading-title{
     color:#131313;
@@ -119,3 +124,32 @@ button.btn.header-content-btn.primary-color-btn {
 }
 
 /* banner end */
+
+/* feature start */
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.feature-images img {
+    border-radius: 10px;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+
+button.btn.feature-content-btn.primary-color-btn {
+    margin-right: auto;
+}
+/* feature end */

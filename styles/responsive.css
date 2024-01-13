@@ -1,7 +1,7 @@
 /* mobile & small devices responsive */
 @media screen and (max-width: 576px) {
     .container{
-        width: 98%;
+        width: 95%;
     }
     section{
         margin: 2rem 0;
@@ -31,6 +31,21 @@
     .banner img{
         height: auto;
     }
+    /* feature */
+    .features{
+        flex-direction: column;
+    }
+    .feature-images{
+        grid-template-columns: auto;
+    }
+    .feature-content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    button.btn.feature-content-btn.primary-color-btn{
+        margin: auto;
+    }
 }
 
 /* tablet and laptop device responsive */
@@ -50,5 +65,20 @@
     }
     h1.header-content-title{
         font-size: 3rem;
+    }
+    /* feature */
+    .features{
+        flex-direction: column;
+    }
+    .feature-images{
+        grid-template-columns: auto;
+    }
+    .feature-content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    button.btn.feature-content-btn.primary-color-btn{
+        margin: auto;
     }
 }
