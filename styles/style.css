@@ -16,7 +16,7 @@ html{
     margin: 0 auto;
 }
 section{
-    margin: 3rem 0;
+    margin: 5rem 0;
 }
 li{
     list-style-type: none;
@@ -135,12 +135,13 @@ button.btn.header-content-btn.primary-color-btn {
 
 .feature-images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 300px);
     gap: 1rem;
 }
+.feature-images > div {width: 100%;}
 
-.feature-images img {
-    border-radius: 10px;
+.feature-images > div > img {
+    width: 100%;
 }
 
 .feature-content {
@@ -153,7 +154,61 @@ button.btn.feature-content-btn.primary-color-btn {
     margin-right: auto;
 }
 /* feature end */
-/* feature love & enjoy */
+/* feature love & enjoy start */
+.feature-love-enjoy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.feature-love-content {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.feature-love-content p {
+    margin: 1rem 0;
+}
+
+.feature-love-content h1::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: -10px;
+    position: absolute;
+    background: #FF900E;
+}
+
+.feature-love-content h1 {
+    position: relative;
+    margin-right: 3rem;
+    margin-left: 10px;
+}
+.feature-love-items > div {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 1.8rem;
+}
+
+.feature-love-items > div > h3 {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .8rem;
+}
+
+.feature-love-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.feature-love-images img {
+    max-width: 400px;
+}
+/* feature love & enjoy end */
 
 
 /* some facts start */
@@ -177,7 +232,7 @@ button.btn.feature-content-btn.primary-color-btn {
 .facts-images {
     display: grid;
     gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .facts-images > div > h3 {
@@ -213,8 +268,28 @@ button.btn.feature-content-btn.primary-color-btn {
 }
 
 .sponspors-images {
-    display: grid;
+    display: flex;
     gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sponspors-images img {
+    filter: grayscale(1);
+    flex: 0 0 185px;
+    cursor: pointer;
 }
 /* sponspors end */
+
+/* footer start */
+footer{
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 2rem 0 0;
+}
+.copy{
+    font-size: 20px;
+    color: #424242;
+}
+/* footer end */
